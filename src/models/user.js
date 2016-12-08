@@ -14,7 +14,8 @@ var userSchema = new Schema({
     email: String,
     avatar: { type: String, default: "avatar" },
     avataroriginal: String,
-    createddate: Date
+    createddate: Date,
+    admin: Boolean
 });
 userSchema.pre('save', function (next) {
     var user = this;

@@ -49,8 +49,8 @@ export function changePassword(req, res) {
     console.log(req.body);
     console.log(req.body.pwdModel);
     var pwdModel = req.body.pwdModel;
-
-    User.findOne({_id: pwdModel.userid}, function(err, user){
+    var idObj = ObjectId(pwdModel.userid);
+    User.findById(idObj, function (err, user) {
         if (err) throw err;
         console.log("Username: "+req.body.username);
         if(!user){
@@ -58,12 +58,22 @@ export function changePassword(req, res) {
         }
         else {
             console.log("Password: "+ req.body.password);
-            console.log("UserId: "+ pwdModel.userid);
-            user.comparePassword(pwdModel.oldPwd, function(err, isMatch){
+            console.log("UserId: "+ user.userid);
+            user.comparePassword(pwdModel.oldpwd, function(err, isMatch){
                 if(isMatch && !err) {
+                    // save new Password
+                    user.password = pwdModel.newpwd;
+                    user.save(function (err, user) {
+                        if (err) {
+                            console.log(err);
+                            // return res.status(500).send({success: false, msg: 'User save() failed.'});
+                            return res.status(500).send({error: 'User changePassword() failed.'});
+                        }
+                        return res.json(user);
+                    })
                 }
                 else {
-                    return res.status(403).send({error: 'Authenticaton failed, wrong password.'});
+                    return res.status(403).send({error: 'Authenticaton failed, wrong old password.'});
                 }
             })
         }

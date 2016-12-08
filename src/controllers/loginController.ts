@@ -9,14 +9,11 @@ import config = require('../config/database');
 export function login(req, res) {
     User.findOne({username: req.body.username}, function(err, user){
         if (err) throw err;
-        console.log("Username: "+req.body.username);
         if(!user){
             return res.status(403).send({error: 'Authenticaton failed, user not found.'});
         }
         else {
-            console.log("Password: "+ req.body.password);
             let userid = user._id;
-            console.log("UserId: "+ userid);
             user.comparePassword(req.body.password, function(err, isMatch){
                 if(isMatch && !err) {
                     var token = jwt.sign(user, config.secret, {
