@@ -142,4 +142,4 @@ var validatePassword = function (plainPass, hashedPass, callback) {
     var validHash = salt + md5(plainPass + salt);
     callback(null, hashedPass === validHash);
 };
-//# sourceMappingURL=userController.js.map
+//# sourceMappingURL=C:/Users/bap/cas_fee/server/controllers/userController.js.map

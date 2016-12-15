@@ -30,9 +30,9 @@ var accommodationSchema = new Schema({
     username: String,
     distance: Number,
     sel: Boolean,
-    ownerid: String
+    ownerid: String,
 });
 // Create a model based on the schema
 var Accommodation = mongoose.model("Accommodation", accommodationSchema);
 module.exports = Accommodation;
-//# sourceMappingURL=accommodation.js.map
+//# sourceMappingURL=C:/Users/bap/cas_fee/server/models/accommodation.js.map

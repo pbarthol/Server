@@ -16,4 +16,4 @@ function addUploadRecord(req, res) {
     });
 }
 exports.addUploadRecord = addUploadRecord;
-//# sourceMappingURL=uploadController.js.map
+//# sourceMappingURL=C:/Users/bap/cas_fee/server/controllers/uploadController.js.map

@@ -53,4 +53,4 @@ userSchema.methods.comparePassword = function (passw, callback) {
 // Create a model based on the schema
 var User = mongoose.model("User", userSchema);
 module.exports = User;
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=C:/Users/bap/cas_fee/server/models/user.js.map
