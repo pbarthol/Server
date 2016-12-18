@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815d5858-57be-4af9-ba38-508ca1f48a4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/accommodationController.js" afterPath="$PROJECT_DIR$/src/controllers/accommodationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/accommodationController.js.map" afterPath="$PROJECT_DIR$/src/controllers/accommodationController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/bookingController.js" afterPath="$PROJECT_DIR$/src/controllers/bookingController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/bookingController.js.map" afterPath="$PROJECT_DIR$/src/controllers/bookingController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/loginController.js" afterPath="$PROJECT_DIR$/src/controllers/loginController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/loginController.js.map" afterPath="$PROJECT_DIR$/src/controllers/loginController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/uploadController.js" afterPath="$PROJECT_DIR$/src/controllers/uploadController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/uploadController.js.map" afterPath="$PROJECT_DIR$/src/controllers/uploadController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/userController.js" afterPath="$PROJECT_DIR$/src/controllers/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/userController.js.map" afterPath="$PROJECT_DIR$/src/controllers/userController.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/accommodation.js" afterPath="$PROJECT_DIR$/src/models/accommodation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/accommodation.js.map" afterPath="$PROJECT_DIR$/src/models/accommodation.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/booking.js" afterPath="$PROJECT_DIR$/src/models/booking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/booking.js.map" afterPath="$PROJECT_DIR$/src/models/booking.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/upload.js" afterPath="$PROJECT_DIR$/src/models/upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/upload.js.map" afterPath="$PROJECT_DIR$/src/models/upload.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/user.js" afterPath="$PROJECT_DIR$/src/models/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/user.js.map" afterPath="$PROJECT_DIR$/src/models/user.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,16 +63,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="925">
               <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accommodationController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/accommodationController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -191,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/config/database.js" />
         <option value="$PROJECT_DIR$/src/routes/index.js" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -267,6 +252,20 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -289,17 +288,17 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CAS-FEE\Server\public\uploads\images" />
-      <recent name="D:\CAS-FEE\Server\src\controllers" />
-      <recent name="D:\CAS-FEE\Server\src\models" />
-      <recent name="D:\CAS-FEE\Server\src" />
-      <recent name="D:\CAS-FEE\Server" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CAS-FEE\Server\public\uploads" />
       <recent name="D:\CAS-FEE\Server\public\uploads\images" />
       <recent name="D:\CAS-FEE\Server\src\routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CAS-FEE\Server" />
+      <recent name="D:\CAS-FEE\Server\public\uploads\images" />
+      <recent name="D:\CAS-FEE\Server\src\controllers" />
+      <recent name="D:\CAS-FEE\Server\src\models" />
+      <recent name="D:\CAS-FEE\Server\src" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.www">
@@ -397,19 +396,19 @@
       <workItem from="1481132452479" duration="613000" />
       <workItem from="1481210517518" duration="2263000" />
       <workItem from="1481790030860" duration="5442000" />
-      <workItem from="1482074210979" duration="8000" />
+      <workItem from="1482074210979" duration="290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91108000" />
+    <option name="totallyTimeSpent" value="91390000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
-    <editor active="false" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27798408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27798408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -523,13 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/userController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -909,6 +901,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
