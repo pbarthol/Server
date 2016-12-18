@@ -94,4 +94,4 @@ function getBookingsForUser(req, res) {
     });
 }
 exports.getBookingsForUser = getBookingsForUser;
-//# sourceMappingURL=C:/Users/bap/cas_fee/server/controllers/bookingController.js.map
+//# sourceMappingURL=bookingController.js.map

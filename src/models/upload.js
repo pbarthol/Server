@@ -11,4 +11,4 @@ var uploadSchema = new Schema({
 // Create a model based on the schema
 var Upload = mongoose.model("Upload", uploadSchema);
 module.exports = Upload;
-//# sourceMappingURL=C:/Users/bap/cas_fee/server/models/upload.js.map
+//# sourceMappingURL=upload.js.map

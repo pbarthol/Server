@@ -54,4 +54,4 @@ function getAccommodationList(req, res) {
     });
 }
 exports.getAccommodationList = getAccommodationList;
-//# sourceMappingURL=C:/Users/bap/cas_fee/server/controllers/accommodationController.js.map
+//# sourceMappingURL=accommodationController.js.map

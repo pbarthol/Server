@@ -34,4 +34,4 @@ function login(req, res) {
     });
 }
 exports.login = login;
-//# sourceMappingURL=C:/Users/bap/cas_fee/server/controllers/loginController.js.map
+//# sourceMappingURL=loginController.js.map

@@ -15,4 +15,4 @@ var bookingSchema = new Schema({
 // Create a model based on the schema
 var Booking = mongoose.model("Booking", bookingSchema);
 module.exports = Booking;
-//# sourceMappingURL=C:/Users/bap/cas_fee/server/models/booking.js.map
+//# sourceMappingURL=booking.js.map
