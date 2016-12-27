@@ -10,7 +10,7 @@ function login(req, res) {
         if (err)
             throw err;
         if (!user) {
-            return res.status(403).send({ error: 'Authenticaton failed, user not found.' });
+            return res.status(403).send({ error: 'Authentifizierung fehlgeschlagen. Benutzername oder Passwort falsch!' });
         }
         else {
             var userid_1 = user._id;
@@ -27,7 +27,7 @@ function login(req, res) {
                     });
                 }
                 else {
-                    return res.status(403).send({ error: 'Authenticaton failed, wrong password.' });
+                    return res.status(403).send({ error: 'Authentifizierung fehlgeschlagen. Benutzername oder Passwort falsch!' });
                 }
             });
         }

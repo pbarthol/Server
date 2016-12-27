@@ -25,7 +25,7 @@ export function addBooking(req, res) {
         if (err) {
             console.log(err);
             // return res.status(500).send({success: false, msg: 'Error at search the booking.'});
-            return res.status(500).send({error: 'Error at search the booking.'});
+            return res.status(500).send({error: 'Fehler beim suchen der Buchung!'});
         }
         if (!booking) {
             // append date stamp when record was created //
@@ -35,7 +35,7 @@ export function addBooking(req, res) {
                 if (err) {
                     console.log(err);
                     // return res.status(500).send({success: false, msg: 'Booking save() failed.'});
-                    return res.status(500).send({error: 'Booking save() failed.'});
+                    return res.status(500).send({error: 'Buchung fehlgeschlagen!'});
                 }
                 return res.json(booking);
             })
@@ -43,7 +43,7 @@ export function addBooking(req, res) {
         else {
             console.log('The accommodation is already booked for this user.');
             // return res.status(500).send({success: false, msg: 'The accommodation is already booked for this user'});
-            return res.status(500).send({error: 'The accommodation is already booked for this user.'});
+            return res.status(500).send({error: 'Dieses Mietobjekt ist bereits von Ihnen gebucht!'});
         }
 
     })
@@ -80,7 +80,8 @@ export function getAllBookings(req, res)
 {
     Booking.find(function (err, bookings) {
         if (err) {
-            return res.status(500).send({error: 'Failure in getAllBookings.'});
+            // return res.status(500).send({error: 'Failure in getAllBookings.'});
+            return res.status(500).send({error: 'Fehler beim Suchen aller Buchungen (getAllBookings)'});
         }
         if (bookings) {
             return res.json(bookings);
@@ -89,13 +90,27 @@ export function getAllBookings(req, res)
 }
 
 
-export function getBookingsForUser(req, res)
+export function getUserBookings(req, res)
 {
     console.log('get Booking Request');
     var userid = req.params.id;
     Booking.find({userid: userid}, function (err, bookings) {
         if (err) {
-            return res.status(500).send({error: 'Failure in getBookingsForUser.'});
+            return res.status(500).send({error: 'Fehler beim Suchen der Buchungen für diesen Benutzer! (getUserBookings)'});
+        }
+        if (bookings) {
+            return res.json(bookings);
+        }
+    });
+}
+
+export function getAccoommodationBookings(req, res)
+{
+    console.log('get Booking Request');
+    var accommodationid = req.params.id;
+    Booking.find({accommodationid: accommodationid}, function (err, bookings) {
+        if (err) {
+            return res.status(500).send({error: 'Fehler beim Suchen der Buchungen für dieses Mietobjekt! (getAccoommodationBookings)'});
         }
         if (bookings) {
             return res.json(bookings);

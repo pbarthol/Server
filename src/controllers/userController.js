@@ -45,7 +45,7 @@ function changePassword(req, res) {
             throw err;
         console.log("Username: " + req.body.username);
         if (!user) {
-            return res.status(403).send({ error: 'Authenticaton failed, user not found.' });
+            return res.status(403).send({ error: 'Authentifizierung fehlgeschlagen!' });
         }
         else {
             console.log("Password: " + req.body.password);
@@ -58,13 +58,13 @@ function changePassword(req, res) {
                         if (err) {
                             console.log(err);
                             // return res.status(500).send({success: false, msg: 'User save() failed.'});
-                            return res.status(500).send({ error: 'User changePassword() failed.' });
+                            return res.status(500).send({ error: 'Passwortwechsel fehlgeschlagen!' });
                         }
                         return res.json(user);
                     });
                 }
                 else {
-                    return res.status(403).send({ error: 'Authenticaton failed, wrong old password.' });
+                    return res.status(403).send({ error: 'Authentifizierung fehlgeschlagen. Benutzername oder Passwort falsch!' });
                 }
             });
         }
@@ -81,12 +81,12 @@ function addUser(req, res) {
         if (err) {
             console.log(err);
             // return res.status(500).send({success: false, msg: 'Error at search the user.'});
-            return res.status(500).send({ error: 'Error at search the user.' });
+            return res.status(500).send({ error: 'Fehler beim Benutzer suchen!' });
         }
         if (user) {
             console.log('username already taken');
             // return res.status(500).send({success: false, msg: 'Username already taken.'});
-            return res.status(500).send({ error: 'Username already taken.' });
+            return res.status(500).send({ error: 'Benutzername bereits vergeben!' });
         }
         else {
             User.findOne({ email: newUser.email }, function (err, user) {
@@ -96,7 +96,7 @@ function addUser(req, res) {
                 if (user) {
                     console.log('email already taken');
                     // return res.status(500).send({success: false, msg: 'Email already taken.'});
-                    return res.status(500).send({ error: 'Email already taken.' });
+                    return res.status(500).send({ error: 'E-Mail bereits vergeben!' });
                 }
                 else {
                     // append date stamp when record was created //

@@ -10,7 +10,7 @@ export function login(req, res) {
     User.findOne({username: req.body.username}, function(err, user){
         if (err) throw err;
         if(!user){
-            return res.status(403).send({error: 'Authenticaton failed, user not found.'});
+            return res.status(403).send({error: 'Authentifizierung fehlgeschlagen. Benutzername oder Passwort falsch!'});
         }
         else {
             let userid = user._id;
@@ -25,11 +25,9 @@ export function login(req, res) {
                         token: token,
                         userid: userid
                     });
-                    // var token = jwt.encode(user, config.secret);
-                    // res.json({success: true, token: token});
                 }
                 else {
-                    return res.status(403).send({error: 'Authenticaton failed, wrong password.'});
+                    return res.status(403).send({error: 'Authentifizierung fehlgeschlagen. Benutzername oder Passwort falsch!'});
                 }
             })
         }
